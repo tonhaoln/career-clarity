@@ -23,12 +23,7 @@ No hype. No inflation. Just clarity.
 
 **New to Claude Code?**
 
-1. Visit [claude.ai/code](https://claude.ai/code)
-2. Install for your system (Mac, Windows, Linux)
-3. Open terminal, run `claude`
-4. Follow the login prompts
-
-Once you see the Claude prompt, you're ready.
+[5-minute setup guide](https://code.claude.com/docs/en/quickstart) - install, login, done.
 
 ---
 
@@ -46,22 +41,26 @@ More input = better output. Don't overthink it.
 
 ### 2. Run the agents
 
-Open this folder in Claude Code, then run each agent in order:
+Navigate to this folder in terminal and run `claude`:
+
+```bash
+cd /path/to/your/career-clarity
+claude
+```
+
+Then tell Claude to run each agent. Example:
 
 ```
-/skills-extractor
+> please run the skills extractor
 ```
-Creates your skills database. Review it, edit anything that's wrong.
 
-```
-/target-strategist
-```
-Defines your positioning. Answer the questions honestly.
+Claude will ask you questions as you go - just answer like you would in a normal chat. Check your outputs in `/outputs/`, edit as needed, done.
 
-```
-/resume-builder
-```
-Generates your resume from the database + strategy.
+**Run in order:**
+
+1. `/skills-extractor` - Creates your skills database
+2. `/target-strategist` - Defines your positioning
+3. `/resume-builder` - Generates your resume from the database + strategy
 
 ### 3. Edit and refine
 
@@ -69,10 +68,10 @@ Review each output. Edit freely - these are starting points, not final drafts.
 
 ### 4. Check consistency (after editing)
 
-Once you've made changes, run:
+Once you've made changes, tell Claude to run the `/consistency-check`:
 
 ```
-/consistency-check
+> please run the consistency check
 ```
 Catches drift between documents - mismatched numbers, mixed voice, claims that don't align.
 
