@@ -16,6 +16,28 @@ No hype. No inflation. Just clarity.
 
 ---
 
+## Structure
+
+```
+career-clarity/
+│
+├── inputs/              ← Drop your career materials here
+│
+├── outputs/             ← Generated files appear here
+│
+├── templates/           ← Document structure references
+│
+├── examples/            ← See what finished outputs look like
+│
+└── .claude/agents/      ← The four agents
+    ├── skills-extractor
+    ├── target-strategist
+    ├── resume-builder
+    └── consistency-check
+```
+
+---
+
 ## Requirements
 
 - [Claude Code](https://claude.ai/code) installed
@@ -104,6 +126,7 @@ Every claim must be defensible. If you can't explain it in an interview, it shou
 - **Edit freely.** The outputs are starting points, not final drafts.
 - **No inputs? No problem.** The skills-extractor can interview you directly if your folder is empty.
 - **See an example.** Check `/examples/skills-database-example.md` to see what a finished database looks like.
+- **Editing markdown?** Use your editor's preview mode to see formatted output (VS Code: Cmd+Shift+V). Or paste into Google Docs / Notion - markdown converts cleanly.
 
 ---
 
